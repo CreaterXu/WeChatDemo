@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y="true" scroll-x="false" style="height={{windowHeight+'px'}}" bindscrolltolower="lower" bindscrolltoupper="upper">
+  <block wx:for="{{dataList}}">
+    <view style="height:6rpx;background-color:#CCC;"></view>
+    <view class="item">
+      <view class="itemHeader">
+      <image class="usetAvator" src="{{item.profile_image}}"></image>
+      <view class="headerRight"  >
+              <text class="headerName">{{item.name}}</text>
+              <text class="headerTime">{{item.passtime}}</text>
+            </view>
+      </view>
+       <!--item头部结束-->
+          <text class="itemContent">{{item.text}}</text>
+       <view class="itemFooter">
+              <view>
+                <image class="footerImg" src="/images/zan.png" />{{item.love}}
+              </view>
+              <view>
+                <image class="footerImg" src="/images/unzan.png" />{{item.hate}}
+              </view>
+              <view>
+                  <image class="footerImg" src="/images/share.png" />{{item.favourite}}
+              </view>
+              <view>
+                <image class="footerImg" src="/images/comment.png" />{{item.comment}}
+              </view>
+          </view>
+    </view>
+  </block>
+   </scroll-view>
+</view>

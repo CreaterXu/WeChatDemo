@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/image/img"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "百思不得姐",
+    "navigationBarTextStyle":"whilte"
+  },
+  "tabBar": {
+    "color": "#a9b7b7","selectedColor": "#000000",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "段子",
+      "iconPath": "images/duanzi_unselected.png",
+      "selectedIconPath": "images/duanzi_selected.png"
+    },{
+      "pagePath":"pages/image/img",
+      "text":"图片",
+      "iconPath":"images/image_unselected.png",
+      "selectedIconPath":"images/image_selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 20000,
+    "uploadFile": 20000,
+    "downloadFile": 120000
+  },
+  "debug":true
+}
